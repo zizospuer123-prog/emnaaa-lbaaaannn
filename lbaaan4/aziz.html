@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose One 😁</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#6dd5fa,#2980b9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.box{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    width:420px;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+button{
+    width:90%;
+    margin:10px;
+    padding:15px;
+    font-size:18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#result{
+    display:none;
+    margin-top:20px;
+}
+
+img{
+    width:220px;
+    border-radius:15px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h2>🎁 A5TAR</h2>
+<p>ya benti OUMOUREK A5TAR
+    w rod balek te5tar bilghalet noubloukik </p>
+
+<button onclick="wrong()"> 🍓fraises</button>
+<button onclick="correct()">🥛lbaaan</button>
+
+<button onclick="wrong1()">🍫 cake au CHOKLATA</button>
+
+<div id="result">
+    <h2>IL7A9 ILA7A9 mitwa93ha bech ta5ter ilbaan sa7bi! 😂❤️</h2>
+
+    <!-- Replace this with YOUR picture -->
+    <img src="lbaaan.jpg">
+
+    <p>
+        bRRRRavouuu...<br>
+        wooooooh 3al lbaaaaan. 
+    </p>
+</div>
+
+</div>
+
+<script>
+
+function wrong(){
+    alert("Haka tw ti wath7a ilza7 Haka amna .");
+}
+function wrong1(){
+    alert("rani bech nibloukik aywach chnia chocklata labes .");
+}
+
+function correct(){
+
+    document.querySelectorAll("button").forEach(btn=>{
+        btn.style.display="none";
+    });
+
+    document.getElementById("result").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
